@@ -15,5 +15,5 @@ Web by měl zvýšit povědomí o značce, usnadnit zákazníkům najít vše po
   - Kontakt: adresa, mapa, telefonní číslo, e-mail a kontaktní formulář
 
 ## Důležité odkazy
-[Grafické zpracování](https://www.figma.com/design/S6A4raMbptUk9pWv6uzfoH/Pra%C5%BE%C3%A1kov%C3%A1Nella?t=sKhZ7g1x0C6C706Z-0) ve Figmě.\
+[Grafické zpracování]([https://www.figma.com/design/S6A4raMbptUk9pWv6uzfoH/Pra%C5%BE%C3%A1kov%C3%A1Nella?t=sKhZ7g1x0C6C706Z-0](https://www.figma.com/design/S6A4raMbptUk9pWv6uzfoH/Pra%C5%BE%C3%A1kov%C3%A1Nella?node-id=0-1&m=dev)) ve Figmě.\
 [Zobrazení]() pomocí gh-pages.
