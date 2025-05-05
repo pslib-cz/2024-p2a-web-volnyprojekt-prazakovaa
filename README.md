@@ -8,11 +8,9 @@ Web by měl zvýšit povědomí o značce, usnadnit zákazníkům najít vše po
 ### Vizáž webu 
 * základní barvou je `#f01f87`
 * struktura
-  - Úvodní stránka: přehled služeb, představení "firmy"
-  - Služby: detailní popis nabízených služeb
-  - Galerie: fotografie prací, portfolio
-  - O nás: informace o týmu, historii salonu...
-  - Kontakt: adresa, mapa, telefonní číslo, e-mail a kontaktní formulář
+  - Úvodní stránka: představení firmy a nabízených služeb (o nás, ukázka služeb)
+  - Služby: detailní popis nabízených služeb s fotografiemi a cenou
+  - Kontakt: více o firmě, kde se objednat (telefonní číslo, e-mail, sociální sítě)
 
 ## Důležité odkazy
 [Grafické zpracování](https://www.figma.com/design/S6A4raMbptUk9pWv6uzfoH/Pra%C5%BE%C3%A1kov%C3%A1Nella?node-id=0-1&m=dev) ve Figmě.\
