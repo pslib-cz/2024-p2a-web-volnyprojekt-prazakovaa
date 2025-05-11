@@ -10,9 +10,19 @@
   }
 
   a {
+    padding: 15px 32px;
+    place-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+  }
+
+  li {
+    list-style: none;
   }
 
   a:hover {
+    background: linear-gradient(81deg, rgba(240, 31, 135, 0.36) 0%, rgba(247, 242, 246, 0.36) 86.99%);
   }
   
   h1 {

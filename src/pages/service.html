@@ -3,18 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LaurinBarbershop</title>
   </head>
   <body>
     <div class="app">
-      <header class="app__header">
-        
+      <header class="page__header">
+        <div class="page__intro">
+          <div> <a href="./" class="page__logo"><span>BarbershopLaurin</span></a> </div>
+          <nav>
+            <menu class="page__nav">
+              <li class="btn  btn--active"><a href="%BASE_URL%service.html">Služby</a> </li>
+              <li class="btn"><a href="%BASE_URL%sindex.html">Domů</a> </li>
+              <li class="btn"><a href="%BASE_URL%service.html">Kontakt</a> </li>
+            </menu>
+          </nav>
+        </div>
+          <svg width="128" height="3" xmlns="http://www.w3.org/2000/svg">
+            <rect class="line" x="0" y="0" width="128" height="3" rx="1.5" ry="1.5"/>
+          </svg>
       </header>
-      <main class="app__content">
+
+      <main class="page__content">
 
       </main>
-      <footer class="app__footer">
+
+      <footer class="page__footer">
 
       </footer>
     </div>
