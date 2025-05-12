@@ -11,40 +11,69 @@
   --color-light: #F7F2F6;
   --color-dark: #292F3D;
 }
-
 body {
   min-width: 320px;
   min-height: 100vh;
 }
-
-.app {
-
+.btn {
+  padding: 12px 28px;
+  place-items: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid var(--color-primary);
+  font-size: 0.8em;
+  position: relative;
+}
+.btn:hover {
+  background: linear-gradient(81deg, rgba(240, 31, 135, 0.36) 0%, rgba(247, 242, 246, 0) 86.99%);
+}
+.btn--active::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 1em;
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  background-color: var(--color-primary, magenta);
+}
+.page__logo::before {
+  content: "";
+  display: block;
+  background: center / contain no-repeat transparent;
+  background-image: url("../../public/vite.svg");
+  width: 80px;
+  height: 100%;
+  font-size: 1.5em;
+}
+.page__logo > span {
+  display: none;
 }
 
 /* HEADER */
 .page__header{
   height: 35vh;
 }
-
 .page__intro {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   height: 90%;
 }
-
+.page__logo {
+  display: block;
+  height: 2em;
+  margin: 0 auto;
+}
 .page__nav {
   display: flex;
   gap: 1em;
+  padding: 0;
 }
-
-.btn--active   {
-  background-color: #F01F87;
-}
-
-
-
 .line {
+  display: block;
+  margin: 2em auto;
   fill: var(--color-secondary);
 }
 
