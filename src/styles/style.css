@@ -25,23 +25,18 @@
     display: block;
   }
   .btn {
-    padding: 12px 28px;
     place-items: center;
-    text-decoration: none;
     border-radius: 5px;
     border: 2px solid var(--color-primary);
     font-size: 0.8em;
-    background-color: rgba(240, 31, 135, 0);
-    transition: background-color 200ms ease-in;
+    background-color: transparent;
+    transition: background 200ms ease-in;
   }
   .btn.btn--active {
     background: linear-gradient(81deg, rgba(240, 31, 135, 0.36) 0%, rgba(247, 242, 246, 0) 86.99%);
   }
-  .btn:hover {
-    background-color: rgba(240, 31, 135, 0.36);
-  }
-  .btn:visited{
-    color: var(--color-primary);
+  .btn:has(a:hover) {
+    background-color: rgba(240, 31, 135, 0.3);
   }
   .page__logo::before {
     content: "";
@@ -67,8 +62,8 @@
   .header--main{
     height: 75vh;
     background-image: 
-    linear-gradient(0deg, var(--background-color), rgba(255, 255, 255, 0)),
-    url(/public/bgheader.jpg);
+      linear-gradient(0deg, var(--background-color), rgba(255, 255, 255, 0)),
+      url(/public/bgheader.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
