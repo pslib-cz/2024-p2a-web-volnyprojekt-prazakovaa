@@ -15,6 +15,7 @@
     "vituum": "^1.2.0"
   },
   "dependencies": {
+    "lightgallery": "^2.8.3",
     "normalize.css": "^8.0.1"
   }
 }
