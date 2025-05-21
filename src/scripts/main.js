@@ -1,24 +1,37 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from '../counter.js'
+import lightGallery from 'lightgallery';
+import lgZoom from 'lightgallery/plugins/zoom';
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
 
-setupCounter(document.querySelector('#counter'))
+document.addEventListener('DOMContentLoaded', () => {
+  const galleryEl = document.getElementById('lightgallery1');
+
+  lightGallery(galleryEl, {
+    selector: 'a',
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const galleryEl = document.getElementById('lightgallery2');
+
+  lightGallery(galleryEl, {
+    selector: 'a',
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const galleryEl = document.getElementById('lightgallery3');
+
+  lightGallery(galleryEl, {
+    selector: 'a',
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+  });
+});

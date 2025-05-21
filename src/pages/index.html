@@ -2,7 +2,7 @@
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../public/icons/icon.svg" />
     <link rel="stylesheet" href="/src/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LaurinBarbershop</title>
@@ -14,10 +14,10 @@
         <div class="page__header__intro">
           <a href="./" class="intro__logo"><span>BarbershopLaurin</span></a>
           <nav>
-            <ul class="intro__nav">
+            <menu class="intro__nav">
               <li><a class="btn" href="%BASE_URL%service.html">Služby</a> </li>
               <li><a class="btn" href="%BASE_URL%contact.html">Kontakt</a> </li>
-            </ul>
+            </menu>
           </nav>
         </div>
         <svg class="line" width="128" height="3" xmlns="http://www.w3.org/2000/svg">
@@ -30,24 +30,22 @@
           <h1>Barbershop Laurin</h1>
           <svg>nuzky lol</svg>
         </div>
-        <section class="page__content__section  section--diff">
+        <section class="page__content__section section--grid">
           <div class="section__intro">
             <h2><a href="%BASE_URL%contact.html">O mně</a></h2>
             <p>Provozuji <span class="mark">soukromé kadeřnictví</span> s osobním přístupem, nově se starám o vlasy a spokojenost mých zákazníků. Zaměřuji se především na <span class="mark">moderní pánské střihy</span>.</p>
             <p>Každý klient je pro mně <span class="mark">jedinečný</span>. Ať už toužíte po změně nebo drobné úpravě, jste v dobrých rukou. Chci, aby každý klient odcházel nejen krásnější, ale i spokojenější.</p>
           </div>
-          <div class="section__card">
-            <img class="image--responsive" src="%BASE_URL%laurin.jpg" alt="úprava vousů">
+            <img class="card__photo image--responsive" src="%BASE_URL%laurin.jpg" alt="úprava vousů">
             <div class="card__info">
-              <h3 class="h3--diff"><span class="desktop">Jmenuji se </span>Jakub Laurin</h3>
+              <h3 class="h3--diff"><span class="desktop">Jmenuji se </span> Jakub Laurin</h3>
               <a class="btn btn--card" href="%BASE_URL%contact.html">Více o mně</a>
             </div>
-          </div>
         </section>
 
         <section class="page__content__section">
           <h2><a href="%BASE_URL%service.html">Služby</a></h2>
-          <div class="section__intro">
+          <div class="section__intro section--flex">
             <p>Provozuji <span class="mark">mužské kadřnictví</span>. Zaměřuji se na moderní pánské <span class="mark">střihy</span> s lehkými <span class="mark">designovými prvky</span>, nechybí ale i klasické služby, jako udržování perfektní délky vašich vlasů.</p>
             <a class="btn desktop" href="%BASE_URL%service.html">Podrobnosti</a>
           </div>
@@ -84,41 +82,43 @@
         <svg class="line" width="128" height="3" xmlns="http://www.w3.org/2000/svg">
           <rect x="0" y="0" width="128" height="3" rx="1.5" ry="1.5"/>
         </svg>
-        <form class="page__footer__form" action="#" method="get">
-          <h4>Kontaktujte mě!</h4>
-          <div class="form__group g1">
-            <label for="fname">Jméno:</label>
-            <input class="input" type="text" id="fname" name="fname">
-          </div>
-          <div class="form__group g2">
-            <label for="lname">Příjmení:</label>
-            <input class="input" type="text" id="lname" name="lname">
-          </div>
-          <div class="form__group group--full">
-            <label for="lname">Telefonní číslo:</label>
-            <input class="input" type="text" id="lname" name="lname">
-          </div>
-          <div class="form__group group--full">
-            <label for="message">Váš dotaz:</label>
-            <textarea class="input" name="message" rows="3"></textarea>
-          </div>
-          <input class="btn btn--card btn--form" type="submit" value="Odeslat">
-        </form>
-
-        <a href="./" class="intro__logo"><span>BarbershopLaurin</span></a>
-
         <div class="page__footer__main">
-          <section class="main__text">
-            <h3>Kontakt</h3>
-            <a class="link icon icon--email" href="mailto:nella.prazakova.023@pslib.cz">nella.prazakova.023@pslib.cz</a>
-            <a class="link icon icon--ig" href="https://www.instagram.com/nprazaak">@nprazaak</a>
-            <a class="link icon icon--phone" href="tel:+420111111111">+420 111 111 111</a>
-          </section>
-          <section class="info__text desktop">
-            <h3>Mapa stránek</h3>
-            <a class="link" href="%BASE_URL%service.html">Nabízené služby</a>
-            <a class="link" href="%BASE_URL%contact.html">Více o mně</a>
-          </section>
+          <form class="main__form" action="#" method="get">
+            <h4>Kontaktujte mě!</h4>
+            <div class="form__group g1">
+              <label for="fname">Jméno:</label>
+              <input class="input" type="text" id="fname" name="fname">
+            </div>
+            <div class="form__group g2">
+              <label for="lname">Příjmení:</label>
+              <input class="input" type="text" id="lname" name="lname">
+            </div>
+            <div class="form__group group--full">
+              <label for="lname">Telefonní číslo:</label>
+              <input class="input" type="text" id="lname" name="lname">
+            </div>
+            <div class="form__group group--full">
+              <label for="message">Váš dotaz:</label>
+              <textarea class="input" name="message" rows="3"></textarea>
+            </div>
+            <input class="btn btn--card btn--form" type="submit" value="Odeslat">
+          </form>
+
+          <a href="./" class="intro__logo"><span>BarbershopLaurin</span></a>
+
+          <div class="main__info">
+            <section class="main__info__text">
+              <h3>Kontakt</h3>
+              <a class="link icon icon--email" href="mailto:nella.prazakova.023@pslib.cz">nella.prazakova.023@pslib.cz</a>
+              <a class="link icon icon--ig" href="https://www.instagram.com/nprazaak">@nprazaak</a>
+              <a class="link icon icon--phone" href="tel:+420111111111">+420 111 111 111</a>
+            </section>
+            <section class="main__info__text desktop">
+              <h3>Mapa stránek</h3>
+              <a class="link icon icon--scissor" href="%BASE_URL%service.html">Nabízené služby</a>
+              <a class="link icon icon--person" href="%BASE_URL%contact.html">Více o mně</a>
+            </section>
+          </div>
         </div>
 
         <p class="page__footer__copyright">&copy; 2025 Pražáková</p>

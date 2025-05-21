@@ -24,7 +24,8 @@
   h1, h2 {
     font-size: 1.4rem;
     font-weight: 500;
-    color: var(--change-dark)
+    color: var(--change-dark);
+    display: inline-block;
   }
 
   h2 > a {
