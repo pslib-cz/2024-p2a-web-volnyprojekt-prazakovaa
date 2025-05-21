@@ -120,7 +120,7 @@
     margin-bottom: 3rem;
   }
   .page__content{
-    padding: 1rem 4rem;
+    padding: 1.5rem;
   }
 
   .page_content__header{
@@ -219,7 +219,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 150px);
-    margin: 2rem;
+    margin: 1rem;
     max-width: 544px;
   }
 
@@ -250,7 +250,6 @@
     grid-area: form;
     width: 75vw;
     max-width: 560px;
-    margin: 3em;
     justify-items: center;
     align-items: center;
     border: 2px solid var(--change-dark);
