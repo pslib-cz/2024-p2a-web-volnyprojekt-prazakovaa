@@ -168,7 +168,7 @@
       display: block;
       margin: 0;
       border: none;
-      border-bottom: 1px solid var(--color-light);
+      border-bottom: 2px solid var(--color-light);
       color: var(--color-light);
       background-color: transparent;
       box-shadow: none;
@@ -194,8 +194,8 @@
     max-width: 624px;
     padding: 2rem;
     margin-top: 2rem;
-    border-top: 1px solid var(--change-dark);
-    border-bottom: 1px solid var(--change-dark);
+    border-top: 2px solid var(--change-dark);
+    border-bottom: 2px solid var(--change-dark);
   }
 
   .page__footer__copyright {
