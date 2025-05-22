@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <link rel="stylesheet" href="/src/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LaurinBarbershop</title>
+    <title>Kontakt | LaurinBarbershop</title>
   </head>
   <body>
     <div class="page">
@@ -42,26 +42,28 @@
           <div class="section__intro">
             <p>Jmenuji se Jakub <span class="mark">Laurin</span>, od tud jméno mého barbershopu. Už je to chvíle, co jsem snil o otevření vlastního kadeřnictví.</p>
             <p>Začínal jsem se střihy svých spolužáků. Rozhodl jsem se to ale posunout dál. Nemám zatím vlastní salon, ale vaše přání splním podle vašich představ.</p>
+            <p class="desktop">Rád kombinuji tradiční techniky s moderními trendy, abych každému klientovi vytvořil jedinečný a stylový look. Pro mě není důležité jen ostříhat, ale také poradit, jak o účes pečovat, aby vydržel co nejdéle svěží a upravený.</p>
+            <p class="desktop">Věřím, že kvalitní střih dokáže dodat sebevědomí a podtrhnout osobnost. Proto ke každému přistupuji individuálně, s maximální péčí a respektem k vašim přáním i typu vlasů. Těším se, až vás budu moci přivítat a společně vytvoříme váš nový styl!</p>
           </div>
-          <img class="card__photo image--responzive desktop" src="/public/bgheader.jpg" alt="Profilová fotografie">
+          <img class="card__photo image--responzive desktop" src="%BASE_URL%laurin.jpg" alt="Profilová fotografie">
         </section>
         <section class="page__content__contacts">
           <h2>Kontaktujte mě!</h2>
           <div class="contacts__main">
           <div class="contacts__article">
-            <img class="contact__icon" src="../../public/icons/tabler--brand-instagram.svg" alt="Instagram logo" />
+            <img class="contact__icon" src="%BASE_URL%icons/tabler--brand-instagram.svg" alt="Instagram logo" />
             <h3>Instagram</h3>
             <p>Nejlépe mě kontaktujete na mém Instagramu:</p>
             <a  class="contacts__link" href="https://www.instagram.com/nprazaak">@nprazaak</a>
           </div>
           <div  class="contacts__article">
-            <img class="contact__icon" src="../../public/icons/tabler--send.svg" alt="Ikona emailu" />
+            <img class="contact__icon" src="%BASE_URL%icons/tabler--send.svg" alt="Ikona emailu" />
             <h3>Email</h3>
             <p>Napište mi na můj email:</p>
             <a class="contacts__link" href="mailto:nella.prazakova.023@pslib.cz">nella.prazakova.023@pslib.cz</a>
           </div>
           <div  class="contacts__article">
-            <img class="contact__icon" src="../../public/icons/tabler--phone.svg" alt="Ikona mobilního telefonu" />
+            <img class="contact__icon" src="%BASE_URL%icons/tabler--phone.svg" alt="Ikona mobilního telefonu" />
             <h3>Telefonní číslo</h3>
             <p>Nebojte se ozvat ani přes telefon: </p>
             <a class="contacts__link" href="tel:+420111111111">+420 111 111 111</a>
@@ -78,20 +80,20 @@
         <div class="page__footer__main">
           <form class="main__form" action="#" method="get">
             <h4>Kontaktujte mě!</h4>
-            <div class="form__group g1">
+            <div class="form__group first-name">
               <label for="fname">Jméno:</label>
               <input class="input" type="text" id="fname" name="fname">
             </div>
-            <div class="form__group g2">
+            <div class="form__group last-name">
               <label for="lname">Příjmení:</label>
               <input class="input" type="text" id="lname" name="lname">
             </div>
             <div class="form__group group--full">
               <label for="lname">Telefonní číslo:</label>
-              <input class="input" type="text" id="lname" name="lname">
+              <input class="input" type="text" id="tel" name="lname">
             </div>
             <div class="form__group group--full">
-              <label for="message">Váš dotaz:</label>
+              <label for="message" id="message">Váš dotaz:</label>
               <textarea class="input" name="message" rows="3"></textarea>
             </div>
             <input class="btn btn--card btn--form" type="submit" value="Odeslat">
