@@ -50,8 +50,8 @@
   .btn--active, .btn--form:hover { background: linear-gradient(81deg, rgba(240, 31, 135, 0.36) 0%, rgba(247, 242, 246, 0) 86.99%); }
   .btn--card{
     color: var(--change-light);
-    background-color: var(--color-primary, deeppink);
-    border-color: var(--color-primary, deeppink);
+    background-color: light-dark(var(--color-primary, deeppink), var(--color-secondary, mediumturquoise));
+    border-color: light-dark(var(--color-primary, deeppink), var(--color-secondary, mediumturquoise));
   }
   .btn--card:hover{
     color: var(--color-primary, deeppink);
@@ -64,7 +64,7 @@
     transition: color 200ms ease-in;
   }
 
-  .intro__logo::before {
+  .logo-barbershop::before {
     content: "";
     display: block;
     background: center / contain no-repeat transparent;
@@ -75,7 +75,7 @@
     margin: -2rem auto;
   }
 
-  .intro__logo > span { display: none; }
+  .logo-barbershop > span { display: none; }
 }
 
 @layer design {
@@ -104,7 +104,7 @@
     height: 90%;
     margin-bottom: 3rem;
   }
-  .intro__logo {
+  .logo-barbershop {
     display: block;
     height: 2em;
     margin: 0 auto;
@@ -133,7 +133,7 @@
 
   .page__content__header{
     display: flex;
-    gap: var(--gap);
+    gap: var(--gap-small);
   }
 
   .service__main, .service__price {
@@ -213,7 +213,7 @@
     gap: var(--gap);
   }
 
-  .page__content__contacts > h2::after { display: none; }
+  .page__content__contacts, .page__content__service  > h2::after { display: none; }
   .page__content__contacts h3 { margin: -1rem }
 
   .page__content__service { padding: 3rem 0; }
@@ -369,7 +369,7 @@
     background: linear-gradient(22deg, rgba(240, 31, 135, 1) -16.45%, rgba(41, 47, 61, 0) 50.15%);;
   }
 
-  .intro__logo {
+  .logo-barbershop {
     grid-area: logo;
   }
 
