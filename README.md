@@ -6,7 +6,8 @@ Webová stránka prezentuje **služby holičství**, kontakty a všechny základ
 Web by měl zvýšit povědomí o značce, usnadnit zákazníkům najít vše potřebné. Poskytnout informace o službách, cenách a dostupnosti.
 
 ### Vizáž webu 
-* základní barvou je `#f01f87`
+* základní barvou je výrazná růžová, `#f01f87`
+* preferované barevné schéma je bílé, ale web umožňuje i černé rozhraní, pouze se vetšina růžovým prvků stává tyrkysovými, `#39D0C1`
 * struktura
   - Úvodní stránka: představení firmy a nabízených služeb (o nás, ukázka služeb)
   - Služby: detailní popis nabízených služeb s fotografiemi a cenou
