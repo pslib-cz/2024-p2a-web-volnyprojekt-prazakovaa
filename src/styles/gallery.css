@@ -1,27 +1,25 @@
-  .thumbnails {
+@layer gallery {
+.thumbnails {
     height: 150px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     grid-auto-rows: var(--height);
   }
-  
   .thumbnails img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
   .thumbnails__item {
     margin: 0; 
     display: block;
-}
-
-.thumbnails__item > a {
+  }
+  .thumbnails__item > a {
     display: block;
     height: 100%;
     position: relative;
-}
-
-.thumbnails__image {
+  }
+  .thumbnails__image {
     display: block;
+  }
 }

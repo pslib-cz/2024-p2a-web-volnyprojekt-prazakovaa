@@ -1,73 +1,56 @@
-@layer reset {
-:root {
-    font-family:  "Montserrat", Helvetica, Arial, sans-serif; /* Přidat MONTSERRAT */
-    line-height: 1.5;
-    font-weight: 400;
-  
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  a {
-    display: inline-block;
-    text-decoration: none;
-  }
-
-  h1, h2 {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--change-dark);
-    display: inline-block;
-  }
-
-  h2 > a {
-    color: var(--change-dark);
-    padding: 0;
-  }
-
-  h2:hover::after {
-    width: 80px;
-  }
-
-  h2::after{
-    content: "";
-    display: block;
-    background-color: var(--change-dark);
-    height: 2px;
-    width: 30px;
-    margin-top: 0.5rem;
-    transition: width 200ms ease-in;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-    font-weight: 400;
-    padding: 1rem 0;
-    margin-top: 0;
-    border-bottom: 2px solid var(--change-dark);
-  }
-
-  h4 {
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-top: 0;
-  }
-
-  p {
-    color: var(--change-dark);
-  }
-
-  .mark {
-    color: light-dark(var(--color-primary, deeppink), var(--color-secondary, mediumturquoise));
-  }
-
-  .bigger {
-    font-size: 1.5rem;;
-  }
+@layer typo {
+	:root {
+		font-family: "Montserrat", Helvetica, Arial, sans-serif;
+		/* Přidat MONTSERRAT */
+		line-height: 1.5;
+		font-weight: 400;
+		font-synthesis: none;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	li {
+		list-style: none;
+	}
+	a {
+		display: inline-block;
+		text-decoration: none;
+	}
+	h1, h2 {
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: var(--change-dark);
+		display: inline-block;
+	}
+	h2>a {
+		color: var(--change-dark);
+		padding: 0;
+	}
+	h2:hover::after {
+		width: 80px;
+	}
+	h2::after {
+		content: "";
+		display: block;
+		background-color: var(--change-dark);
+		height: 2px;
+		width: 30px;
+		margin-top: 0.5rem;
+		transition: width 200ms ease-in;
+	}
+	h3 {
+		font-size: 1.25rem;
+		font-weight: 400;
+		padding: 1rem 0;
+		margin-top: 0;
+		border-bottom: 2px solid var(--change-dark);
+	}
+	h4 {
+		font-size: 1.1rem;
+		font-weight: 400;
+		margin-top: 0;
+	}
+	p {
+		color: var(--change-dark);
+	}
 }
