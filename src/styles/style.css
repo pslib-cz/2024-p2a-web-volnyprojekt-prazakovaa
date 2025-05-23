@@ -64,15 +64,22 @@
     transition: color 200ms ease-in;
   }
 
+  .logo-barbershop {
+    display: block;
+    padding: 3rem;
+    grid-area: logo;
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
   .logo-barbershop::before {
     content: "";
     display: block;
     background: center / contain no-repeat transparent;
     background-image: url("../../public/icons/logo.svg");
-    width: 100px;
-    height: 100%;
-    padding: 2rem;
-    margin: -2rem auto;
+    height: 70px;
   }
 
   .logo-barbershop > span { display: none; }
@@ -84,6 +91,9 @@
 
   .page__header{
     height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-content: end;
     background: linear-gradient(175deg, rgba(240, 31, 135, 0.32) 0%, rgba(247, 242, 246, 0) 60%);
   }
   .header--diff{
@@ -102,13 +112,6 @@
     align-items: center;
     justify-content: end;
     height: 90%;
-    margin-bottom: 3rem;
-  }
-  .logo-barbershop {
-    display: block;
-    height: 2em;
-    margin: 0 auto;
-    padding: 2rem;
   }
   .intro__nav {
     all: unset;
@@ -118,7 +121,7 @@
   }
   .line {
     display: block;
-    margin: 2rem auto;
+    margin: 4rem auto;
     fill: var(--color-secondary, mediumturquoise);
   }
 
@@ -128,7 +131,7 @@
     margin-bottom: 3rem;
   }
   .page__content{
-    padding: 2rem;
+    padding: var(--gap) 2rem;
   }
 
   .page__content__header{
@@ -248,7 +251,6 @@
     display: flex;
     justify-content: center;
     gap: var(--gap);
-    margin-top: 3rem;
   }
 
   .reviews__article {
@@ -365,16 +367,10 @@
 
   /* FOOTER */
   .page__footer{
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     background: linear-gradient(22deg, rgba(240, 31, 135, 1) -16.45%, rgba(41, 47, 61, 0) 50.15%);;
-  }
-
-  .logo-barbershop {
-    grid-area: logo;
-  }
-
-  .page__footer__main {
-    margin-top: 4rem;
   }
 
   .main__form {
@@ -420,25 +416,32 @@
     grid-column: 1 / span 1;
     width: 100%;
   }
+
+  .page__footer__main {
+    justify-items: center;
+  }
+  
   .main__info {
     grid-area: info;
     width: 75vw;
     max-width: 624px;
     padding: 2rem;
-    margin-top: 2rem;
     border-top: 2px solid var(--change-dark);
     border-bottom: 2px solid var(--change-dark);
   }
 
+  .main__info__text {
+    margin: var(--gap-small);
+  }
+
   .page__footer__copyright {
-    margin: 0;
+    margin: 0 auto;
     padding: 2rem;
   }
 
   .page__footer h3{
       border: none;
-      padding-top: 2rem;
-      padding-bottom: 1rem;
+      padding: var(--gap-small);
       margin: 0;
       color: var(--color-primary, deeppink)
     }
@@ -457,7 +460,7 @@
     content: "";
     display: inline-block;
     background: center / contain no-repeat transparent;
-    width: 2em;
+    width: 2rem;
     height: 2rem;
     padding-right: 3rem;
   }
