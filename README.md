@@ -15,4 +15,4 @@ Web by měl zvýšit povědomí o značce, usnadnit zákazníkům najít vše po
 
 ## Důležité odkazy
 [Grafické zpracování](https://www.figma.com/design/S6A4raMbptUk9pWv6uzfoH/Pra%C5%BE%C3%A1kov%C3%A1Nella?node-id=0-1&m=dev) ve Figmě.\
-[Zobrazení](https://fictional-adventure-mr6pv1o.pages.github.io/](https://pslib-cz.github.io/2024-p2a-web-volnyprojekt-prazakovaa/)) pomocí gh-pages.
+[Zobrazení](https://pslib-cz.github.io/2024-p2a-web-volnyprojekt-prazakovaa/) pomocí gh-pages.
